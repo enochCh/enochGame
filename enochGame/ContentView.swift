@@ -23,6 +23,10 @@ struct ContentView: View {
             if counter == 1{
                 Text("Achievement earned: First Click")
             }
+            if counter == 100{
+                Text("Achievement earned: 100 Clicks")
+            }
+            
         .padding()
     }
 }
