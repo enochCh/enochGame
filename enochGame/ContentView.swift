@@ -16,6 +16,7 @@ struct ContentView: View {
             Button("Click"){
                 showDetails = true
                 counter += 1
+                showShop == false
             }
             if showDetails {
                 Text("jn aw +" + String(counter))
@@ -25,8 +26,13 @@ struct ContentView: View {
             }
             if counter == 100{
                 Text("Achievement earned: 100 Clicks")
+                showShop == true
             }
-            
+            if showShop == true{
+                Vstack{
+
+                }
+            }
         .padding()
     }
 }
