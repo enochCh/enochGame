@@ -14,8 +14,9 @@ struct ContentView: View {
         VStack {
             Text("Alvin Clicker")
             Button("Click"){
+                cPc == 1
                 showDetails = true
-                counter += 1
+                counter += cPc
                 showShop == false
             }
             if showDetails {
@@ -31,6 +32,7 @@ struct ContentView: View {
             if showShop == true{
                 Vstack{
 // pls add more stuff here, not too sure how to Vstack
+                    //Variable for clicks is cPc
                 }
             }
         .padding()
