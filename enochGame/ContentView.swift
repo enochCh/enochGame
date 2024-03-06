@@ -20,7 +20,9 @@ struct ContentView: View {
             if showDetails {
                 Text("jn aw +" + String(counter))
             }
-        }
+            if counter == 1{
+                Text("Achievement earned: First Click")
+            }
         .padding()
     }
 }
