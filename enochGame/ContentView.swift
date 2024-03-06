@@ -30,7 +30,7 @@ struct ContentView: View {
             }
             if showShop == true{
                 Vstack{
-
+// pls add more stuff here, not too sure how to Vstack
                 }
             }
         .padding()
