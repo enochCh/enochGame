@@ -1,0 +1,18 @@
+//
+//  Shop.swift
+//  enochGame
+//
+//  Created by Enoch Chiu on 13/3/2024.
+//
+
+import SwiftUI
+
+struct Shop: View {
+    var body: some View {
+        Text("SHOp")
+    }
+}
+
+#Preview {
+    Shop()
+}
