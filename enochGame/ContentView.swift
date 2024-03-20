@@ -12,30 +12,21 @@ struct ContentView: View {
     @State private var counter = 0
     var body: some View {
         VStack {
-            Text("Alvin Clicker")
-            Button("Click"){
-                cPc == 1
+            Button{
                 showDetails = true
-                counter += cPc
-                showShop == false
+                counter += 1
+            } label: {
+                Image("AALVIN")
+                    .resizable()
+                    .frame(width:300, height: 300)
             }
             if showDetails {
-                Text("jn aw +" + String(counter))
+                Text("alvins = " + String(counter)).font(.system(size: 35))
             }
-            if counter == 1{
-                Text("Achievement earned: First Click")
+            Button("Shop"){
+                
             }
-            if counter == 100{
-                Text("Achievement earned: 100 Clicks")
-                showShop == true
-            }
-            if showShop == true{
-                Vstack{
-// pls add more stuff here, not too sure how to Vstack
-                    //Variable for clicks is cPc
-                }
-            }
-        .padding()
+        }
     }
 }
 
