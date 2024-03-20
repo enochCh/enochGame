@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Shop: View {
     var body: some View {
-        Text("SHOp")
+        Text("Shop").font(.system(size: 100))
     }
 }
 
