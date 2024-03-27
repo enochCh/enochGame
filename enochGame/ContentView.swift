@@ -15,7 +15,12 @@ struct ContentView: View {
             VStack {
                 Button{
                     showDetails = true
-                    counter += 1
+                    if counter<100 {
+                        counter += 1
+                    }
+                    if counter>100 {
+                        counter += 2
+                    }
                 } label: {
                     Image("AALVIN")
                         .resizable()
@@ -29,6 +34,10 @@ struct ContentView: View {
             }
         }
     }
+}
+
+#Preview {
+    ContentView()
 }
 
 #Preview {
