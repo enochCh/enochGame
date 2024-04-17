@@ -23,8 +23,13 @@ struct ContentView: View {
                         
                         counter += 2
                     }
-                    if gub1 == true {
+                    if counter>=150 {
                         
+                    }
+                        
+                    if gub1 == true && counter > 100 {
+                        
+                        counter += 3
                     }
                 } label: {
                     Image("AALVIN")
