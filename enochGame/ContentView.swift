@@ -1,12 +1,3 @@
-//
-//  ContentView.swift
-//  enochGame
-//
-//  Created by Enoch Chiu on 28/2/2024.
-//
-
-import SwiftUI
-
 struct ContentView: View {
     @State private var showDetails = false
     @State private var counter = 0
@@ -18,7 +9,8 @@ struct ContentView: View {
                     if counter<100 {
                         counter += 1
                     }
-                    if counter>100 {
+                    if counter>=100 {
+                        
                         counter += 2
                     }
                 } label: {
@@ -28,6 +20,11 @@ struct ContentView: View {
                 }
                 if showDetails {
                     Text("alvins = " + String(counter)).font(.system(size: 35))
+                }
+                if counter>=100 {
+                    Text("Sherry coin bonus")
+                        .font(.system(size: 35))
+                    
                 }
                 NavigationLink("Shop", destination: Shop())
                     .font(.system(size: 35))
@@ -39,8 +36,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-#Preview {
-    ContentView()
-}
-
