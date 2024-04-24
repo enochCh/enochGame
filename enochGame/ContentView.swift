@@ -23,12 +23,8 @@ struct ContentView: View {
                         
                         counter += 2
                     }
-                    if counter>=150 {
                         
-                    }
-                        
-                    if gub1 == true && counter > 100 {
-                        
+                    if Shop.gub1 == true && counter > 150 {
                         counter += 3
                     }
                 } label: {
@@ -44,17 +40,18 @@ struct ContentView: View {
                         .font(.system(size: 35))
                     
                 }
-                NavigationLink("Shop", destination: Shop())
-                    .font(.system(size: 35))
+                if Shop.gub1 && counter>150 { Text("gub bonus")
+                        .font(.system(size: 35))
+                }
+                if (counter>=150) {
+                    NavigationLink("Shop", destination: Shop())
+                        .font(.system(size: 35))
+                }
+                
             }
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
-
 
 #Preview {
     ContentView()
