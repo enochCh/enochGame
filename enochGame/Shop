@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
-var gub1 = false
+
 struct Shop: View {
+    static var gub1 = false
     var body: some View {
         Text("Shop").font(.system(size: 75))
         Spacer()
         VStack {
             Button {
-                gub1 = true
+                Shop.gub1 = true
             }label:{
                 Image("gub")
                     .resizable()
